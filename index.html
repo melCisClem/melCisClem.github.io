@@ -1,0 +1,209 @@
+<!-- 
+MIT License
+Copyright (c) 2022 kusal-tharindu
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE. 
+
+link: https://github.com/kusal-tharindu/Personal-Portfolio
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <!-- head -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lai Jun Jie Clement</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/6df614b3b2.js" crossorigin="anonymous"></script>
+</head>
+
+<!-- body -->
+<body>
+    <!-- sidemenu -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>3D Application Developer</p>
+                <h1>I'm <span>Clement</span><br> from Singapore</h1>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- -------About--------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I am a student in Real-Time Interactive Simulation (RTIS) program at DigiPen Institute of Technology of Singapore,
+                         with a passion for game engine development, graphics programming and game development.</p>
+
+                         <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experiences</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                         </div>
+
+                         <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming Languages</span><br>C++, GLSL</li>
+                                <li><span>Engine & Graphics</span><br>OpenGL, ImGui, ECS Architecture, Deferred Rendering Pipelines</li>
+                                <li><span>Systems Programming</span><br>Custom Memory Allocators, Free List Management</li>
+                                <li><span>Math & Algorithms</span><br>Spatial Partitioning (Octrees, BVH), Vector/Matrix Math, Graph Algorithms</li>
+                                <li><span>Tools & Development</span><br>CMake, Git / Git LFS, Visual Studio, Unix/Linux Environments</li>
+                            </ul>
+                        </div>
+
+                         <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2021</span><br>Beyondsoft Singapore Intern</li>
+                                <li><span>2019</span><br>Transit Link Customer Service</li>
+                            </ul>
+                         </div>
+
+                         <div class="tab-contents" id="education" >
+                            <ul>
+                                <li><span>Real-Time Interactive Simulation (RTIS)</span><br>Digipen Institute of Technology Singapore</li>
+                                <li><span>Cyber Security and Digital Forensics</span><br>Nanyang Polytechnic</li>
+                            </ul>
+                         </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- portpolio -->
+<!-- portfolio -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            
+            <div class="work">
+                <!-- Replaces the <img> tag with a generic icon container -->
+                <div class="work-placeholder" style="background: #262626; height: 350px; display: flex; align-items: center; justify-content: center; border-radius: 10px;">
+                    <i class="fa-solid fa-cogs fa-5x" style="color: #444;"></i>
+                </div>
+                <div class="layer">
+                    <h3>Donut Engine</h3>
+                    <p>Windows, Mac and Linux Cross-platform C++ game engine built with an Entity Component System (ECS) architecture, integrated Mono C# scripting, and an ImGui editor interface</p>
+                    <a href="https://github.com/aryanisran/GAM200DonutDisturb"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <div class="work-placeholder" style="background: #262626; height: 350px; display: flex; align-items: center; justify-content: center; border-radius: 10px;">
+                    <i class="fa-solid fa-network-wired fa-5x" style="color: #444;"></i>
+                </div>
+                <div class="layer">
+                    <h3>Networked Multiplayer Game</h3>
+                    <p>Real-time 2D C++ game featuring custom TCP/UDP socket programming and a client-server lobby system</p>
+                    <a href="https://github.com/melCisClem/Network_A5"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <div class="work-placeholder" style="background: #262626; height: 350px; display: flex; align-items: center; justify-content: center; border-radius: 10px;">
+                    <i class="fa-solid fa-microchip fa-5x" style="color: #444;"></i>
+                </div>
+                <div class="layer">
+                    <h3>Custom Memory Allocator</h3>
+                    <p>Low-level C++ systems programming project implementing free list management and aligned memory allocation, benchmarked against standard library allocators.</p>
+                    <a href="https://github.com/melCisClem/MemoryManager"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- ********contact*******-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-envelope"></i> laiclement04@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 91068736</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/clementlaijunjie/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+
+                <a href="Documents/my_cv.pdf" download class="btn btn2">Download CV</a>
+
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="copyright">
+        <p>&copy; 2026 Clement Lai</p>
+    </div>
+</div>
+
+<!--**********java script*************-->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+        function opentab(tabname){
+            for(let tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(let tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            //display active colour tab
+            event.currentTarget.classList.add("active-link");
+            //disply active description
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    
+</body>
+</html>
